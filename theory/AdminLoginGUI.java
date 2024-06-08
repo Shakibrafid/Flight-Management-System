@@ -56,8 +56,7 @@ public class AdminLoginGUI extends JFrame implements ActionListener {
                     // Check if the entered password matches the stored password
                     if (admin.getPassword().equals(password)) {
                         JOptionPane.showMessageDialog(this, "Login successful! Welcome, " + admin.getName());
-                        // Perform actions after successful login (e.g., open admin dashboard)
-                        // Example: new AdminDashboard(admin);
+                
                         return;
                     } else {
                         JOptionPane.showMessageDialog(this, "Incorrect password. Please try again.", "Error", JOptionPane.ERROR_MESSAGE);
